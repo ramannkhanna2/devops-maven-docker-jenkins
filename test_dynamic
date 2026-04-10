@@ -2,9 +2,7 @@ pipeline {
     agent any  // Use any available Jenkins agent
     //agent { label 'agent-1' }
 
-    tools {
-        maven 'mavn'  // Maven tool configured in Jenkins ( add mavn in tools section in jenkins)
-    }
+
 
     parameters {
         string(name: 'IMAGE_NAME', defaultValue: 'myimage', description: 'Docker Image Name')  // Image name parameter
